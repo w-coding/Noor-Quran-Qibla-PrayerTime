@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainFGColor"
+    tools:context=".Zakat">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rabar015"
+            android:text="زەکات"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="center"
+                android:text="زەکات چییە ؟"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/ZakatDrezha"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:text="@string/wajb"
+                android:layout_gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/awanayZakaytyanTyaya"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/awanayZakaytyanTyayaXalakany"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/marjakanAzhal"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/marjakanAzhalXal"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/ZakatyPara"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/ZakatyParaXal"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/marjakanyParaWajb"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/marjakanParaXal"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/ZakatyDaluDan"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/zakatyDaxludanXal"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/mywa"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/mywaDrezha"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/mywaMarj"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/aga"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/amanjyZakat"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/amanjyZakatDrezha"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/mikanyzm"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/mikanyzmDrezha"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/pekhata"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/pekhataXal"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/karakany"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/karakanyXal"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="right"
+                android:text="@string/sarachawakan"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:text="@string/sarchawakanXal"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rabar014"
+                    android:text="بۆزانینی زەکاتی پارەکەت دەتوانیت لەخوارەوە بریپارەکەت بنوسیت ئێمەش زەکاتەکەت پێدەڵێین"
+                    android:textColor="@color/greenColor"
+                    android:textSize="23sp"
+                    android:padding="8dp"
+                    />
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/nrx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rabar014"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                />
+                <EditText
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edPara"
+                    android:fontFamily="@font/rabar014"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="بڕی پارەکەت بنوسە"
+                    android:textSize="20sp"
+                    android:elevation="10dp"
+                    android:textColor="@color/greenColor"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:background="@drawable/backgrownd_zakat"
+                    />
+                <Button
+                    android:textStyle="bold"
+                    android:fontFamily="@font/rabar015"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCal"
+                    android:elevation="10dp"
+                    android:text="ئەنجام"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_button"
+                    />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

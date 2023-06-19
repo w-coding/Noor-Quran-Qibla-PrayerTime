@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgrund_image"
+    tools:context=".ActivityHajUmrah">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_back"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <ImageButton
+            android:id="@+id/back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:background="@drawable/down"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:elevation="5dp"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/rabar014"
+            android:text="حەج و عومرە"
+            android:textColor="@color/black2"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/tv3"
+            android:elevation="5dp"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/rabar014"
+            android:text="حەج و عومرە"
+            android:visibility="gone"
+            android:textColor="@color/black2"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/t1"
+                android:background="@drawable/backgrownd_btn_taf"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/rabar014"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                android:text="@string/sunatakany_safar_krdn"
+                android:textColor="@color/black2"
+                android:textSize="16sp"
+                tools:targetApi="p" />
+            <TextView
+                android:id="@+id/t2"
+                android:background="@drawable/backgrownd_btn_taf"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                android:fontFamily="@font/rabar014"
+                android:text="@string/hukma_kany_haj_w_umra"
+                android:textColor="@color/black2"
+                android:textSize="16sp"
+                tools:targetApi="p" />
+            <TextView
+                android:id="@+id/t3"
+                android:background="@drawable/backgrownd_btn_taf"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/rabar014"
+                android:text="@string/karakany_haj_w_umra"
+                android:textColor="@color/black2"
+                android:textSize="16sp"
+                tools:targetApi="p" />
+            <TextView
+                android:id="@+id/t4"
+                android:background="@drawable/backgrownd_btn_taf"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/rabar014"
+                android:text="@string/ark_w_rwknakany_haj"
+                android:textColor="@color/black2"
+                android:textSize="16sp"
+                tools:targetApi="p" />
+            <TextView
+                android:id="@+id/t5"
+                android:background="@drawable/backgrownd_btn_taf"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/rabar014"
+                android:text="@string/anjamdany_umrah"
+                android:textColor="@color/black2"
+                android:textSize="16sp"
+                tools:targetApi="p" />
+            <TextView
+                android:id="@+id/t6"
+                android:background="@drawable/backgrownd_btn_taf"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                android:fontFamily="@font/rabar014"
+                android:text="@string/zyaraty_madyna"
+                android:textColor="@color/black2"
+                android:textSize="16sp"
+                tools:targetApi="p" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:elevation="5dp"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/rabar014"
+            android:text="تێست"
+            android:visibility="gone"
+            android:textColor="@color/black2"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgrund_image"
+    tools:context=".Quran">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_back"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                android:importantForAccessibility="no" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rabar015"
+                android:text="قورئان"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/backgrownd_btn_taf"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                android:padding="10dp"
+                android:src="@drawable/ic_search"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                tools:targetApi="p"
+                android:importantForAccessibility="no" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSaveAya"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rabar015"
+            android:text="کۆتا خوێندنەوە"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backgrownd_btn_taf"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+            tools:ignore="HardcodedText"
+            tools:targetApi="p" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/searchLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/SearchRecyclerView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:fontFamily="@font/rabar014"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="6dp"
+                android:paddingEnd="10dp"
+                android:elevation="5dp"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                android:background="@drawable/backgraownd_card3"
+                android:hint="گەڕان بکە"
+                android:drawablePadding="10dp"
+                android:drawableEnd="@drawable/ic_search"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck"
+                android:autofillHints=""
+                tools:targetApi="p" />
+
+            <ImageButton
+                android:id="@+id/btnHidSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_close_x"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MrecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/mainFGColor"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tayamum">
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/TV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:padding="2dp"
+                android:text="１-كه‌ی ته‌یه‌مموم ده‌كه‌یت؟"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:padding="6dp"
+                android:text="１-كاتێك ئاوت ‌ده‌ست نه‌كه‌و‌ت."
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV1" />
+            <TextView
+                android:id="@+id/TV5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:padding="6dp"
+                android:text="２-کاتێک ئاو هه‌بوو به‌ڵام به‌كارهێنانی زیانی پێ گه‌یاندیت ئه‌وكات‌ ته‌یه‌مموم بكه‌."
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV2" />
+
+            <ImageView
+                android:id="@+id/IV1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@drawable/t1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV5" />
+
+            <TextView
+                android:id="@+id/TV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:paddingStart="25dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="بەڵگە"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IV1" />
+
+            <TextView
+                android:id="@+id/TV4"
+                android:fontFamily="@font/rabar014"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/backgrownd_s"
+                android:elevation="5dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="(وَإِنْ كُنْتُمْ مَرْضَىٰ أَوْ عَلَىٰ سَفَرٍ أَوْ جَاءَ أَحَدٌ مِنْكُمْ مِنَ الْغَائِطِ أَوْ لَامَسْتُمُ النِّسَاءَ فَلَمْ تَجِدُوا مَاءً فَتَيَمَّمُوا صَعِيدًا طَيِّبًا – ئه‌گه‌ر نه‌خۆش بوون یان له سه‌فه‌ردا بوون یان یه‌كێك له‌ ئێوه‌ له‌ سه‌رئاوه‌وه‌ هات یان چوونه‌ لای خێزانتان ، وه‌ ئاوتان ده‌ست نه‌که‌وت ئه‌وکاته ته‌یه‌مموم بکه‌ن) [سورة المائدة, آية 6]"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV3" />
+
+
+            <TextView
+                android:id="@+id/TV6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:padding="2dp"
+                android:text="３-نیه‌تی ته‌یه‌مموم بهێــنه‌"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV4" />
+
+            <TextView
+                android:id="@+id/TV7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/rabar014"
+                android:text="نیه‌تی ته‌یه‌مموم بهێــنه‌‌ له‌ دڵی خۆت دا له‌ بری ئه‌و شته‌ی كه‌ ته‌یه‌ممومی له‌جێگا د‌ه‌كه‌یت كه‌ بریتییه‌ له‌:\n １-ده‌ستنوێژگرتن‌.\n
+２-خۆ شۆردن‌.
+"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:gravity="start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV6" />
+            <TextView
+                android:id="@+id/TV8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:paddingStart="25dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="بەڵگە"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV7" />
+
+            <TextView
+                android:id="@+id/TV9"
+                android:fontFamily="@font/rabar014"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/backgrownd_s"
+                android:elevation="5dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="له‌به‌ر فه‌رمایشتی پێغەمبەر ﷺ: (إنما الأعمال بالنیات – هه‌موو كرده‌وه‌كان به‌ نیه‌ته‌وه‌ ئه‌نجام ده‌درێن) . [البخاری ، مسلم]"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV8" />
+            <TextView
+                android:id="@+id/TV10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:padding="2dp"
+                android:text="３-ده‌سته‌كانت له‌ ڕووی زه‌وی بده‌‌‌"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV9" />
+
+            <TextView
+                android:id="@+id/TV11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/rabar014"
+                android:text="ده‌سته‌كانت له‌ ڕووی زه‌وییه‌كی پاك بده. ئه‌گه‌ر خاكت ده‌ست نه‌كه‌وت ئه‌وكات هه‌ر شوێنێكی تر كه‌ خۆڵی پێوه‌بێت."
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:gravity="start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV10" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@drawable/t2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV11" />
+
+            <TextView
+                android:id="@+id/TV12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:paddingStart="25dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="بەڵگە"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/TV13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/backgrownd_s"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:fontFamily="@font/rabar014"
+                android:text="(فَتَيَمَّمُوا صَعِيدًا طَيِّبًا – به‌ ڕووی زوییه‌كی پاك ته‌یه‌مموم بكه‌) [سورة المائدة, آية 6]"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:gravity="start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV12" />
+
+
+            <TextView
+                android:id="@+id/TV14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:padding="2dp"
+                android:text="４-ده‌ست بهێنه‌ به‌ ڕوخسار و ده‌سته‌كانتدا ‌‌‌‌"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV13" />
+
+            <TextView
+                android:id="@+id/TV15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/rabar014"
+                android:text="ڕوخسارت وه‌ ‌پاشان هه‌ردوو ده‌ستته‌كانت به‌و خۆڵه‌ مه‌سح بكه‌.\n(ده‌سـتی ڕاست پاشان ده‌ستی چه‌پ)."
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:gravity="start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV14" />
+
+            <ImageView
+                android:id="@+id/IV4"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@drawable/t3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV15" />
+
+            <TextView
+                android:id="@+id/TV16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:paddingStart="25dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="بەڵگە"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IV4" />
+
+            <TextView
+                android:id="@+id/TV17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/backgrownd_s"
+                android:elevation="5dp"
+                android:fontFamily="@font/rabar014"
+                android:padding="10dp"
+                android:text="(فَامْسَحُوا بِوُجُوهِكُمْ وَأَيْدِيكُمْ مِنْهُ –(له‌پی ده‌ستتان بده‌ن به‌خاکه‌دا) و بیهێنن به ڕوخسار و ده‌ستتاندا) [سورة المائدة, آية 6]"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:gravity="start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV16" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

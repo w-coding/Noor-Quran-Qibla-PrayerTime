@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/farmwdaSearchLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="5dp"
+        android:id="@+id/cardViewPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="14dp"
+        android:padding="5dp"
+        app:cardBackgroundColor="@color/cardBackgroundColor"
+        app:cardElevation="3dp">
+
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/farmudaTxtView"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/rabar015"
+            android:text="بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ"
+            android:textColor="@color/black2"
+            android:textSize="27sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
