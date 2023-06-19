@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#753E51</color>
+    <color name="colorPrimaryDark">#F5F0EA</color>
+    <color name="colorPrimaryDark1">#D0826C</color>
+    <color name="colorPrayer">#FFB9A6</color>
+    <color name="colorSun">#FCB033</color>
+    <color name="colorAccent">#753E51</color>
+    <color name="black">#753E51</color>
+    <color name="black2">#473D53</color>
+    <color name="white">#F5F0EA</color>
+    <color name="cardBackgroundColor">#FFFFFF</color>
+    <color name="gray">#686868</color>
+    <color name="bgColor">#F5F0EA</color>
+    <color name="mainFGColor">#F4ECE2</color>
+    <color name="mainBGColor">#71B7C0</color>
+    <color name="redColor">#FF3E01</color>
+    <color name="greenColor">#13832F</color>
+    <color name="orangeColor">#F88103</color>
+    <color name="sliderBG">#F4ECE2</color>
+    <color name="TextColor">#F5F0EA</color>
+    <color name="SplashScreenColor">#F5F0EA</color>
+</resources>
