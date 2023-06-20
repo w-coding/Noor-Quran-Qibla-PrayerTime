@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_widget_description"
+    android:initialKeyguardLayout="@layout/salat_widget"
+    android:initialLayout="@layout/salat_widget"
+    android:minWidth="274dp"
+    android:minHeight="40dp"
+    android:previewImage="@drawable/icon_nbb"
+    android:previewLayout="@layout/salat_widget"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellWidth="5"
+    android:targetCellHeight="2"
+    android:updatePeriodMillis="1800000"
+    android:widgetCategory="home_screen" />
+
+    <!-- [updatePeriodMillis] bo awai chan millisecond jarek nwei bkatawa
+                // 1,800,000 = 30 daqa-->
+
+
+    <!-- [targetCellWidth] widget'akat chand xana agret la asoy
+    // [targetCellHeight]  chand xana agret bo barzi
+    // [initialKeyguardLayout], [initialLayout], [previewLayout] layout'y widget'aka.
+    // [previewImage] ch wenaiak nishan bdat la list'y widget'akan bo kati ziad krdn.
+    -->
