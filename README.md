@@ -135,7 +135,7 @@ Noor Application is a religious application dedicated to the holy religion of Is
 
 ## Download link 
 
-[Google play]()
+[Google play](https://play.google.com/store/apps/details?id=com.dya.noor)
 
 [Apkpure](https://m.apkpure.com/group/com.south.nor)
 
@@ -147,3 +147,5 @@ Noor Application is a religious application dedicated to the holy religion of Is
 [Telegram Channel](https://t.me/noor_page_official)
 
 [YouTube Channel](https://youtube.com/@Noorpageofficial)
+
+[Quran YouTube channel](https://youtube.com/@noor_quran99)
