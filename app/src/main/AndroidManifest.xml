@@ -25,6 +25,7 @@
         android:theme="@style/Theme.Surat"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup">
+
         <activity
             android:name=".SearchFarmwdaActivity"
             android:exported="false" />
@@ -155,6 +156,25 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+
+        <!--  [widget.PrayerWidgetHorizontal] bgora ba nawi Class Widget xot -->
+        <receiver
+            android:name=".SalatWidget"
+            android:exported="false"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/salat_widget_info" />
+            <!--  naweki bnw w la jei [prayer_widget_info] dai bne.-->
+        </receiver>
+
+
+
     </application>
 
 </manifest>
