@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrund_image"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    tools:context=".ui.Settings">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:id="@+id/sBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/textColorBlack"
+            android:fontFamily="@font/rabar015"
+            android:text="ڕێکخستن"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/textColorBlack"
+                android:fontFamily="@font/rabar015"
+                android:text="دەنگی بانگ بێژ"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvB"
+                        android:background="@drawable/backgrownd_btn_taf"
+                        android:elevation="5dp"
+                        android:padding="8dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineAmbientShadowColor="@color/black"
+                        android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                        android:fontFamily="@font/rabar014"
+                        android:textColor="@color/textColorBlack"
+                        android:text="شێخ ناصر القطامی ( بانگی کورت )"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText"
+                        tools:targetApi="p" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvE"
+                        android:background="@drawable/backgrownd_btn_taf"
+                        android:elevation="5dp"
+                        android:padding="8dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineAmbientShadowColor="@color/black"
+                        android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                        android:fontFamily="@font/rabar014"
+                        android:text="شێخ ناصر القطامی ( بانگی تەواو )"
+                        android:textColor="@color/textColorBlack"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText"
+                        tools:targetApi="p" />
+
+                </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/textColorBlack"
+                android:fontFamily="@font/rabar015"
+                android:text="پێدانی دەسەڵات"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvActic"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                    android:fontFamily="@font/rabar014"
+                    android:text="جالاک کردنی پیشاندانی بانگ لەسەر شاشە"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvActic2"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                    android:fontFamily="@font/rabar014"
+                    android:text="پشتگوێخستنی پاتری"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/textColorBlack"
+                android:fontFamily="@font/rabar015"
+                android:text="قەبارەی نوسین"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:id="@+id/quranSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/backgrownd_btn_taf"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/btnQuranSizeMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:fontFamily="@font/rabar015"
+                    android:text="-"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:layout_margin="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:elevation="2dp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+                <TextView
+                    android:id="@+id/txtQuranSizeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:fontFamily="@font/rabar014"
+                    android:text="27"
+                    android:layout_margin="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+                <TextView
+                    android:id="@+id/btnQuranSizePlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:fontFamily="@font/rabar015"
+                    android:text="+"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:layout_margin="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:elevation="2dp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+                <TextView
+                    android:id="@+id/txtTestQuran"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/textColorBlack"
+                    android:fontFamily="@font/kfgqpc_uthmanic_script_hafs_regular"
+                    android:text="بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/textSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/backgrownd_btn_taf"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/btnTextSizeMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:fontFamily="@font/rabar015"
+                    android:text="-"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:layout_margin="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:elevation="2dp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+                <TextView
+                    android:id="@+id/txtTextSizeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:fontFamily="@font/rabar014"
+                    android:text="20"
+                    android:layout_margin="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p"/>
+
+                <TextView
+                    android:id="@+id/btnTextSizePlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:fontFamily="@font/rabar015"
+                    android:text="+"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:layout_margin="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:elevation="2dp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+                <TextView
+                    android:id="@+id/txtTestText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/textColorBlack"
+                    android:fontFamily="@font/rabar014"
+                    android:text="نوسینەکانی تر"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

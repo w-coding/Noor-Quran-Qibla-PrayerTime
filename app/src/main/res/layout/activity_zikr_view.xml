@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainFGColor"
+    tools:context=".ui.Zikr_view_Activity">
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/txtZikrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textColor="@color/textColorBlack"
+        android:textStyle="bold"
+        android:fontFamily="@font/rabar015"
+        android:text="zikr id"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/zRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_animaition_fall_down"
+        android:background="@drawable/backgrownd_sura"
+        />
+
+</LinearLayout>

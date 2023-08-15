@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/mainLayout">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/cardBackgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/Surat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/rabar015"
+            android:text="سورەت"
+            android:textColor="@color/textColorBlack"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/mInfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/rabar014"
+            android:text="جوزئ "
+            android:textColor="@color/textColorBlack"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Surat" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="2dp"
+            android:background="@color/textColorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mInfo2"
+            app:layout_constraintTop_toBottomOf="@+id/Surat" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="2dp"
+            android:background="@color/textColorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mInfo3"
+            app:layout_constraintTop_toBottomOf="@+id/Surat" />
+
+
+        <TextView
+            android:id="@+id/mInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/rabar014"
+            android:text="ژمارە"
+            android:textColor="@color/textColorBlack"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/mInfo2"
+            app:layout_constraintTop_toBottomOf="@+id/Surat" />
+
+        <TextView
+            android:id="@+id/mInfo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/rabar014"
+            android:text="ئایەت"
+            android:textColor="@color/textColorBlack"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/mInfo"
+            app:layout_constraintTop_toBottomOf="@+id/Surat" />
+
+        <TextView
+            android:id="@+id/mInfo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/rabar014"
+            android:text="شوێن"
+            android:textColor="@color/textColorBlack"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/mInfo3"
+            app:layout_constraintTop_toBottomOf="@+id/Surat" />
+
+        <TextView
+            android:id="@+id/sId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/arabsq"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="1"
+            android:background="@drawable/bg_ayah_num"
+            android:textColor="@color/textColorBlack"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.928" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

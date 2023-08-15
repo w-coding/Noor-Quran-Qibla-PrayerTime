@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_close"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:backgroundTint="@color/sliderBG"
+            android:layout_margin="10dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimationView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/warning_status"
+                />
+            <TextView
+                android:id="@+id/suratTx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:text="تکایە بۆئەوەی ئەپلیکەیشنەکە بەباشی کاری خۆی بکات لەبەشی ڕێکخستنەکان دەسەڵاتەکان مان پێبدە، لە بەشی ڕێکخستنەکان کلیک لەم دوبەشە بکە"
+                android:textColor="@color/textColorBlack"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                    android:fontFamily="@font/rabar014"
+                    android:text="جالاک کردنی پیشاندانی بانگ لەسەر شاشە"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                    android:fontFamily="@font/rabar014"
+                    android:text="پشتگوێخستنی پاتری"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnCloseAll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:elevation="5dp"
+                    android:background="@drawable/btn_no_bg"
+                    android:fontFamily="@font/rabar014"
+                    android:text="پیشان نەدان"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TxtQ"
+                    tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck"
+                    tools:targetApi="p" />
+                <Button
+                    android:id="@+id/btnCancelDialo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:elevation="5dp"
+                    android:background="@drawable/btn_yes_bg3"
+                    android:fontFamily="@font/rabar014"
+                    android:text="لابردن"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TxtQ"
+                    tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck"
+                    tools:targetApi="p" />
+                <Button
+                    android:id="@+id/btnSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:elevation="5dp"
+                    android:background="@drawable/btn_yes_bg"
+                    android:fontFamily="@font/rabar014"
+                    android:text=" ڕیکخستنەکان "
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TxtQ"
+                    tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck"
+                    tools:targetApi="p" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
