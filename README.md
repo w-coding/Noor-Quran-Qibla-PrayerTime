@@ -47,14 +47,17 @@
 14- کاتەکانی بانگ : ئەم تایبەتمەندییە بریتیە لە کاتەکانی بانگ بە ئاسۆی شارەکانی کوردستان ، وە ئاگەدار کردنەوە لەڕێگەی نۆتفیکەیشنەوە .
 15-  خوێندنەوەی قورئان بەدەنگی زیاتر لە 70 قورئان خوێن .
 
-16- شەش تەفسیری کوردی :-
-
+16- دە تەفسیری کوردی :-
+• تەفسیری پوختە
 • تەفسیری ئاسان .
 • تەفسیری ڕامان .
 • تەفسیری ڕێبەر .
 • تەفسیری هەژار .
-• تەفسیری ژین .
+• تەفسیری ژیان .
 • تەفسیری سەناهی .
+• تەفسیری مویەسەر .
+• تەفسیری تەوحیدی .
+• تەفسیری ڕۆشن.
 
 
 English 
@@ -108,14 +111,17 @@ Noor Application is a religious application dedicated to the holy religion of Is
  
 15- Recitation of the Qur'an by more than 70 Qur'an reciters.
 
- ## Six Kurdish Commentaries :-
-
- • Easy interpretation.
+ ## Ten Kurdish Commentaries :-
+ • Puxta Interpretation.
+ • Asan interpretation.
  • Interpretation of Raman.
- • Interpretation of the Guide.
- • Poor interpretation.
- • Interpretation of Life.
+ • Interpretation of the Rebar.
+ • Hazhar interpretation.
+ • Interpretation of Zhiyan.
  • Tafseer Sanahi.
+ • Interpretation Tawhidy
+ • Interpretation Roshn
+ • Interpretation Muiyasar
 
 
 
