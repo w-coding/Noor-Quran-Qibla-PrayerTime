@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_close"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieAnimationView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/warning_status" />
+                <TextView
+                    android:id="@+id/suratTx"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/rabar015"
+                    android:text="ئاگەدارکردنەوە"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/IconV"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/IconV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_nbb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ImageContrastCheck" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/TxtQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/rabar015"
+                android:text="بەکار هێنەری بەڕێز بۆ گەڕان کردن دەتوانی ژمارەی ئایەت یاخود چەند پیتێک لە ئایەتەکە بنوسیت . وەهەروەها بۆ گۆڕینی تەفسیر تکایە کرتە لەسەر ئەو دوگمەیە بکە کە لە شێوەی زەویدایە . دواتر بۆ پیشاندانی تەفسیری هەر ئایەتێک کلیک لە سەر ئایەتەکە بکە ، بۆ سەیڤکردنی کۆتا خوێندنەوە تکایە دەس بنە بە دوگمەی سەیڤکردن."
+                android:textColor="@color/textColorBlack"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText,VisualLintLongText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rabar014"
+                    android:textAlignment="center"
+                    android:text=" تەفسیر "
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    tools:ignore="HardcodedText"
+                    app:drawableLeftCompat="@drawable/ic_language" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rabar014"
+                    android:layout_gravity="center"
+                    android:text=" سەیڤکردن "
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_margin="5dp"
+                    tools:ignore="HardcodedText"
+                    app:drawableLeftCompat="@drawable/ic_bookmark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rabar014"
+                    android:layout_gravity="center"
+                    android:text=" زمانی ئاماژە "
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_margin="5dp"
+                    tools:ignore="HardcodedText"
+                    app:drawableLeftCompat="@drawable/sign_letter_q" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:background="@drawable/btn_yes_bg2"
+                android:fontFamily="@font/rabar015"
+                android:text="داخستن"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck"
+                />
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

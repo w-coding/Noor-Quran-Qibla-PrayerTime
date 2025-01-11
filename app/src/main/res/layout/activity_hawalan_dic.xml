@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    tools:context=".ui.HawalanDicActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/btnBack"/>
+        <TextView
+            android:id="@+id/nameHawalan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="هاوەڵانی پێغمبەرﷺ"
+            android:fontFamily="@font/rabar015"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/black2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:scrollbarThumbVertical="@drawable/scroll_bar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/nameHawalan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="هاوەڵانی پێغمبەرﷺ"
+                android:fontFamily="@font/rabar015"
+                android:textSize="24sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/HawalanDic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ناوى صوهەیبی کوڕی سینانى کوڕی مالیکى نەمەریە، کونیەکەى ئەبوویەحیایەو پێغەمبەرى خوا (صلى الله عليە وسلم) ئەو کونیەی لێنا. صوهەیب کەسێکی سووری بالآ مامناوەند بوو، قژی زۆر بوو و خەنەشی بەکاردەهێنا. خۆی لە بنەڕەتدا رۆمی نیە، بەلآم پێی وتراوە رۆمی، لەبەرئەوەى منداڵ بوو کە رۆمیەکان گرتیان و بردیان، ئەگەرنا باوکى و مامیشی کاربەدەستی کیسراى فارسەکان بوون و ماڵیان لە موصڵ بوو لە لاى دیجلەوە،یان دەوترێت ماڵیان لە خاکى جزیرە بوو لەلاى فوڕات، رۆمەکان دایان بەسەر ئەو شوێنەدا و صوهەیبی منداڵیان برد، ئیتر صوهەیب لە رۆم گەورە بوو و دەستاودەست فرۆشرا تا هێنایانە مەککە، لەوێ عەبدولآى کوڕی جودعان صوهەیبی کڕى و دواتر ئازادى کرد، صوهەیب لەوێ لاى عەبدولآ مایەوە تا ئەو کاتەى عەبدولآ وەفاتى کرد، رایەکیش دەڵێت صوهەیب لاى رۆمیەکان بوو، کە گەورە بوو رایکرد و هاتە مەککەو لەوێ لەگەڵ عەبدولآ هاوپەیمانى بەست و لاى مایەوە تا مرد. کاتێک پێغەمبەر (صلى الله عليە وسلم) پەیامى بۆ هات و بوو بە پێغەمبەر، صوهەیب موسڵمان بوو، موسڵمانبوونى صوهەیب و عەممار لە یەک رۆژدا بوو، ئەوکات بانگەواز چووبوویە ماڵی ئەرقەمەوە. صوهەیب یەکێک بوو لەو حەوت کەسە یەکەمەى کە لە مەککە ئیمانى خۆیان ئاشکراکرد، ئەوانیش بریتی بوون لە پێغەمبەر (صلى الله عليە وسلم) وئەبووبەکر و بیلال و صوهەیب و خەبباب و عەممار و سومەییە. صوهەیب لە مەککە کەسێکی بێ پشت و پەنا بوو، بۆیە لەلایەن بێباوەڕانەوە زۆر ئازار دەدرا، پێغەمبەریش (صلى الله عليە وسلم) کۆچی کرد، ئینجا صوهەیب کۆچی کردبۆ مەدینە. کاتێک صوهەیب کۆچی کرد بۆ مەدینە، قوڕەیشیەکان کەوتنە شوێنی و رێیان پێگرت، ئەویش کەوانەکەى گرتەدەستی و وتى ئێوە دەزانن من لە تیرهاوێژیدا لە هەمووتان بەهێزترم، بەخوا تا خۆتان دەگەیەننە لام هەموو ئەم تیرانەم تێدا تەواو کردون، دواتریش تا دەستم مابێت بەم شمشێرەى دەستم لەگەڵتان دەجەنگم، ئەگەر سامانەکەى منتان دەوێت، پێتان دەڵێم لە کوێیە، ئەوانیش وتیان دەی سامان و باخەکەت بدە بە ئێمە ئیتر وازت لێدێنین، صوهەیب بەڵێنی لێ وەرگرتن، ئینجا پێی وتن سامانەکەى لەکوێیەو خۆی چوو خۆی گەیاند بە پێغەمبەر (صلى الله عليە وسلم)، پێغەمبەر (صلى الله عليە وسلم) کە صوهەیبی بینی فەرمووى (مامەڵەکەت بردەوە ئەی ئەبوویەحیا)، ئەوەبوو خواى گەورە ئایەتى دابەزاندە خوارەوە(ومن الناس من يشري نفسه ابتغاء مرضات الله و الله رؤوف بالعباد). صوهەیب لە غەزاى بەدرو ئوحود و خەندەق و هەموو غەزاکانى تردا بەشدارى کرد. صوهەیب چەندین فەرموودەى لە پێغەمبەرەوە(صلى الله عليە وسلم) گێڕاوەتەوە، لەوانە، دەڵێت: پێغەمبەر (صلى الله عليە وسلم) فەرمووى (بارى باوەڕدار جێی سەرسوڕمانە، هەموو بارى خێرەو ئەوەش تەنها بۆ باوەڕدار وایە، ئەگەر لەخۆشیدا بێت و سوپاسگوزار بێت خێرە بۆی، ئەگەریش نارەحەتى تووش بێت و خۆڕاگر بێت، ئەوە خێرە بۆی). عومەرى کوڕى خەتتاب زۆر سەرسامى صوهەیب بوو و زۆر خۆشی دەویست، داواى کردبوو صوهەیب نوێژى مردووى لەسەر بکات،  ئەوەبوو کە وەفاتى کرد صوهەیب نوێژی لەسەر کرد. دواجار صوهەیب لە مەدینەو لە ساڵی سی و هەشت یان دەوترێت سی و نۆی کۆچیدا وەفاتى کرد و لە مەدینە ئەسپەردە کرا."
+                android:fontFamily="@font/rabar014"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black2"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_close"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/d_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_arrow_down"
+                app:layout_constraintEnd_toStartOf="@+id/id_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+            <TextView
+                android:id="@+id/id_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rabar014"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="هەڵبژاردنی تەفسیر"
+                android:textAlignment="center"
+                android:textColor="@color/textColorBlack"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/rabar014"
+                    android:text="پوختە"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_text"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/t2"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/rabar014"
+                    android:text="ئاسان"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/t1"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/t3"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/rabar014"
+                    android:layout_weight="1"
+                    android:text="ڕامان"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/t2"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/t4"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/rabar014"
+                    android:text="هەژار"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/t3"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/rabar014"
+                    android:text="سەناهی(بادینی)"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/t6"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/rabar014"
+                    android:text="ژیان(بادینی)"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/t5"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/t7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rabar014"
+                    android:padding="5dp"
+                    android:text="ڕێبەر"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+
+                <TextView
+                    android:id="@+id/t9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rabar014"
+                    android:padding="5dp"
+                    android:text="تەوحیدی"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/t10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rabar014"
+                    android:padding="5dp"
+                    android:text="ڕۆشن"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/t11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rabar014"
+                    android:padding="5dp"
+                    android:text="مویەسەر"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/t13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rabar014"
+                    android:padding="5dp"
+                    android:text="ڕوناهی (بادینی)"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/t14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rabar014"
+                    android:padding="5dp"
+                    android:text="موختەسەر"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/t8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/backgrownd_btn_taf"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/rabar014"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:text="لابردنی تەفسیر"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ayaLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainFGColor"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/lblAyahText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="27sp"
+        android:text="١ بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ"
+        android:fontFamily="@font/uthmanic_hafs1b_ver13"
+        android:gravity="center"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/textColorBlack"
+        tools:ignore="HardcodedText" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/bgColor">
+
+        <LinearLayout
+            android:id="@+id/loTopbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            tools:ignore="InefficientWeight,UselessParent">
+
+            <TextView
+                android:id="@+id/lblPageNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:backgroundTint="@null"
+                android:fontFamily="@font/rabar015"
+                android:gravity="center"
+                android:text="page 20  |  Juz 30"
+                android:textAlignment="center"
+                android:textColor="@color/textColorBlack"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/iv_sadaqa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/sadaqa"
+        app:tint="@color/black"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/btnNextSura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/backgrownd_btn_next"
+        android:drawablePadding="3dp"
+        android:fontFamily="@font/rabar014"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="سورەتی دواتر"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:drawableEndCompat="@drawable/ic_arrow_forward"
+        app:drawableTint="@color/white"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

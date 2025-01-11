@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainFGColor"
+    tools:context=".ui.HelpNoor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|start">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="پشتگیری"
+            android:fontFamily="@font/rabar015"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/textColorBlack"/>
+    </LinearLayout>
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/helpTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/textColorBlack"
+                android:fontFamily="@font/rabar014"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ئێوەی ئیماندار دەتوانن لەگەڵمان بەشداربن بە ناردنی یارمەتیە داراییەکانتان"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/rabar014"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_marginTop="39dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/fastPayBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fastpay"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0751 193 5352"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/fastPayTextColor"
+                        android:fontFamily="@font/rabar015"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_marginTop="39dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/fibBtn"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        android:background="@drawable/backgraownd_fib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fib_icons"
+
+                        />
+                    <TextView
+                        android:id="@+id/phoneNumber4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0751 193 5352"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/fibTextColor"
+                        android:fontFamily="@font/rabar015"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/btnAsia"
+                        android:layout_marginTop="39dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:background="@drawable/backgraownd_asi_korek_no_select"
+                        android:src="@drawable/asiacell"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="771 0500202"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/fastPayTextColor"
+                        android:fontFamily="@font/rabar015"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/btnKorek"
+                        android:layout_marginTop="39dp"
+                        android:layout_gravity="center"
+                        android:layout_width="160dp"
+                        android:layout_height="68dp"
+                        android:background="@drawable/backgraownd_asi_korek_no_select"
+                        android:src="@drawable/ic_korek"
+                        app:tint="#006FBA" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SendLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3,000"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/rabar015"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/backgraownd_pay_re"
+                    android:layout_weight="1"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5,000"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/rabar015"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/backgraownd_pay_re"
+                    android:layout_weight="1"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvTen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10,000"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/rabar015"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/backgraownd_pay_re"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDecrement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/rabar015"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/backgraownd_pay_red"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,000"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/rabar015"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/backgraownd_pay_black"
+                    android:layout_weight="1"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvIncrement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/rabar015"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/backgraownd_pay_green"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بەخشین"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/rabar015"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:background="@drawable/backgraownd_pay_send"
+                android:elevation="5dp"
+                />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

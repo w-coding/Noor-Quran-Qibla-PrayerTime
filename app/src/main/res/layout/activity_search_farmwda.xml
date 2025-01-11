@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrund_image"
+    tools:context=".ui.SearchFarmwdaActivity"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_arrow_down"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+
+    <EditText
+        android:id="@+id/SearchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/rabar014"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+        android:background="@drawable/backgraownd_card3"
+        android:hint="گەڕان بکە"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/ic_search"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/black2"
+        tools:ignore="HardcodedText,RtlSymmetry"
+        tools:targetApi="p"
+        android:autofillHints="" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/searchFarmwdaRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

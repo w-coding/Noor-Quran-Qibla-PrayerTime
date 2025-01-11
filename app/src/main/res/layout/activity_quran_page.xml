@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainFGColor"
+    tools:context=".ui.QuranPage">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:background="@color/mainFGColor"
+            app:contentScrim="@color/mainFGColor">
+
+
+            <LinearLayout
+                android:id="@+id/con1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:background="@drawable/backgraownd_surat_view"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    android:background="@drawable/backgrownd_done"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backgrownd_done"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/namumberOfAya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rabar014"
+                            android:text=" خودا"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:background="@drawable/backgrownd_done" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rabar014"
+                            android:text=" خودا"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:background="@drawable/backgrownd_done" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/nameSurah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rabar014"
+                        android:text="ناوەکانی خودا"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:background="@drawable/backgrownd_done" />
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/bismillahImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/textColorBlack"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/bismillah_calligraphy"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"
+                android:gravity="center"
+                android:background="@color/mainFGColor"
+                app:contentInsetStartWithNavigation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buttonBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_back"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                        <TextView
+                            android:id="@+id/txtSuratNAm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rabar015"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:text="سورەتی الفاتحە"
+                            android:layout_gravity="center"
+                            android:textColor="@color/textColorBlack"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="HardcodedText" />
+
+                    <Switch
+                        android:id="@+id/switchNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/rabar014"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="چاککردنی ژمارەکان"
+                        android:textColor="@color/textColorBlack"
+                        tools:ignore="HardcodedText,TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+
+                    <ImageView
+                        android:id="@+id/btnSetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_settings"
+                        app:backgroundTint="@color/colorPrimaryDark1"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pageRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animaition_fall_down"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

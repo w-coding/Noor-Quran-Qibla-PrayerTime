@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgrund_image"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Wc">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/textViewIslamBawar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:padding="2dp"
+                android:text="ویردی چوونه‌ سه‌رئاو"
+                android:textColor="@color/textColorBlack"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:padding="6dp"
+                android:text="بڵێ (بِسْمِ الله ِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبْثِ وَالْخَبائِث) پاشان بە پێی چەپت بچۆرە ژوورەوە. "
+                android:textColor="@color/textColorBlack"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewIslamBawar2" />
+
+            <ImageView
+                android:id="@+id/IV1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@drawable/s1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV2" />
+
+            <TextView
+                android:id="@+id/TV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:paddingStart="25dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="بەڵگە"
+                android:textColor="@color/textColorBlack"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IV1" />
+
+            <TextView
+                android:id="@+id/TV4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/backgrownd_s"
+                android:elevation="5dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="(په‌رده‌ی نێوان چاوی جنۆكه‌كان و عه‌وره‌تی ئاده‌میزاد ئه‌وه‌یه‌ كه‌وا یه‌كێكیان چووه‌ سه‌ر ئاو بڵێت: بسم الله)[ابن ماجة و الترمذي. صحيح الجامع: 3611]، وه‌ فه‌رمووده‌ی ئەنەس -رضي الله عنه- كاتێك كه‌ پێغەمبەر ﷺ د‌ه‌چووه‌ سه‌رئاو ده‌یفه‌رموو: (اللَّهُم إني أعوذ بك من الخبث والخبائث – واته‌: ئه‌ی خوایه‌ په‌نات پێ ده‌گرم له نێرینه‌‌ و مێیینه‌ی شه‌یتانه‌كانی جنۆكه‌) [البخاري: 142 ، مسلم: 375]"
+                android:textColor="@color/textColorBlack"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV3" />
+
+
+            <TextView
+                android:id="@+id/TV6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:padding="2dp"
+                android:text="ویردی هاتنه‌ ده‌ر له‌ سه‌رئاو"
+                android:textColor="@color/textColorBlack"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV4" />
+
+            <TextView
+                android:id="@+id/TV7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/rabar014"
+                android:text="به‌ پێی ڕاستت بڕۆ د‌‌ه‌ره‌وه‌ و پاشان بڵێ: (غُفْرَانَكَ) "
+                android:textColor="@color/textColorBlack"
+                android:textSize="17sp"
+                android:gravity="start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV6" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@drawable/s"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV7" />
+
+            <TextView
+                android:id="@+id/TV12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/backgraownd_text"
+                android:fontFamily="@font/rabar014"
+                android:gravity="start"
+                android:paddingStart="25dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="بەڵگە"
+                android:textColor="@color/textColorBlack"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/TV13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/backgrownd_s"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:text="فه‌رمووده‌ی عائیشه‌ -رضي الله عنها- كاتێك كه‌ پێغەمبەر ﷺ له‌ سه‌رئاو ده‌هاته‌ ده‌ره‌وه‌ ده‌یفه‌رموو: (غفرانك – واته‌: ئه‌ی خوایه‌ داوای لێخۆشبوونت لێ ده‌كه‌م‌) [صحيح الجامع(4707)]"
+                android:textColor="@color/textColorBlack"
+                android:textSize="13sp"
+                android:gravity="start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV12" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

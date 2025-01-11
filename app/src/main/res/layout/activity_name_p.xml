@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/backgrund_image"
+    tools:context=".ui.NameP">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rabar015"
+            android:text="ناوی پێغەمبەران"
+            android:textColor="@color/textColorBlack"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/tvNameP1"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pegambaran"
+                android:textSize="25sp"
+                android:fontFamily="@font/rabar014"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColorBlack"/>
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bawarbuun"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="center"
+                android:textColor="@color/textColorBlack"/>
+            <TextView
+                android:id="@+id/tvNameP2"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bawarbuunDrezha"
+                android:textSize="20sp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:textColor="@color/textColorBlack"/>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nawyanhatwa"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="center"
+                android:textColor="@color/textColorBlack"/>
+            <TextView
+                android:id="@+id/tvNameP3"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nawyanhatwaDrezha"
+                android:textSize="20sp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="right"
+                android:textColor="@color/textColorBlack"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/NPRecyclerView"/>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xawantwana"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/rabar015"
+                android:layout_gravity="center"
+                android:textColor="@color/textColorBlack"/>
+            <TextView
+                android:id="@+id/tvNameP4"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xawantwanaDrezha"
+                android:textSize="20sp"
+                android:fontFamily="@font/rabar014"
+                android:layout_gravity="center"
+                android:textColor="@color/textColorBlack"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

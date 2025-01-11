@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.QuranImageActivity"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_collapseMode="parallax"
+        android:background="@color/colorPrimary"
+        app:contentInsetStartWithNavigation="0dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                app:tint="@color/bgColor"
+                tools:ignore="ContentDescription"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/txtNamesTop"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:fontFamily="@font/uthmanic_hafs1b_ver13"
+                android:layout_height="wrap_content"
+                android:text="الفاتحة"
+                android:layout_gravity="center"
+                android:textColor="@color/TextColor"
+                android:gravity="center"
+                android:textSize="25sp"
+                />
+
+            <ImageView
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bookmark"
+                app:tint="@color/bgColor"
+                tools:ignore="ContentDescription"
+                android:layout_gravity="center"
+                />
+
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+
+        />
+
+
+</LinearLayout>

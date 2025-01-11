@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_close"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimationView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/filse_un"
+
+                />
+            <TextView
+                android:id="@+id/suratTx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:fontFamily="@font/rabar015"
+                android:text="فایلە پێوێستیەکان بەردەست نییە تکایە فایلەکان دابەزێنە ، کێشی فایلەکان نزیک دەبێتەوە لە 120MB "
+                android:textColor="@color/textColorBlack"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/IconV"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:elevation="30dp"
+                android:background="@drawable/btn_yes_bg2"
+                android:fontFamily="@font/rabar014"
+                android:text="دابەزاندن"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark1"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
