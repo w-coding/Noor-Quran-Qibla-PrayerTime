@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+<item
+    android:title=" "
+    tools:ignore="HardcodedText">
+    <menu android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/about"
+            android:title="دەربارەی نوور"
+            android:icon="@drawable/ic_ab"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/help"
+            android:title="پشتگیری"
+            android:icon="@drawable/donate"
+            />
+        <item
+            android:id="@+id/setting"
+            android:title="ڕێکخستنەکان"
+            android:icon="@drawable/ic_settings"
+            tools:ignore="HardcodedText" />
+
+
+    </menu>
+</item>
+
+
+    <item
+        android:title=" "
+        tools:ignore="HardcodedText">
+        <menu android:checkableBehavior="single">
+            <item
+                android:id="@+id/web"
+                android:title="وێبسایت"
+                android:icon="@drawable/link"
+                />
+            <item
+                android:id="@+id/Share"
+                android:title="هاوبەشی پێکردن"
+                android:icon="@drawable/ic_share"
+                />
+            <item
+                android:id="@+id/Star"
+                android:title="هەڵسەنگاندن"
+                android:icon="@drawable/ic_star"
+                />
+            <item
+                android:id="@+id/Exit"
+                android:title="داخستن"
+                android:icon="@drawable/ic_exit"
+                />
+
+        </menu>
+
+    </item>
+
+</menu>
