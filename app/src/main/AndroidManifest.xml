@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Noor"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".ui.HelpNoor"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MiratView"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ActivityMirat"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HawalanDicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HawalanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.QuranPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.KurdishTaranslite"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SearchFarmwdaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NowIsPrayerTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ActivityHajUmrah"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ActivityQuranPdf"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AppSettings"
+            android:exported="false" />
+        <activity
+            android:name=".ui.FarmwdaT"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.FarmwdaView"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.dhikrView2"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.YoutubeChuser"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Babatyrozh"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Youtube"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CitiesSetting"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ActivityPrayersTime"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity android:name=".ui.ActivityBangdan" />
+        <activity android:name=".ui.AyatKursyActivity" />
+      <!--  <activity
+            android:name="com.hassanjamil.hqibla.CompassActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,RedundantLabel" />
+            -->
+        <activity android:name=".ui.Zikr_view_Activity" />
+        <activity android:name=".ui.Zikr_Activity" />
+        <activity android:name=".ui.Dasnwezh" />
+        <activity android:name=".ui.SallahN" />
+        <activity android:name=".ui.Tayamum" />
+        <activity android:name=".ui.IslamB" />
+        <activity android:name=".ui.Halla" />
+        <activity android:name=".ui.Wc" />
+        <activity android:name=".ui.Salah" />
+        <activity android:name=".ui.Zakat" />
+        <activity android:name=".ui.Tasbih" />
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.About" />
+        <activity android:name=".ui.PayaKan" />
+        <activity android:name=".ui.Kteb" />
+        <activity android:name=".ui.NameP" />
+        <activity android:name=".ui.Zhyan_View" />
+        <activity android:name=".ui.Zhian_Nama" />
+        <activity android:name=".ui.Nawakany_xuda" />
+        <activity android:name=".ui.SuratView" />
+        <activity android:name=".ui.Quran" />
+        <activity android:name=".ui.CompassActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".ui.QuranImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".notifications.PrayerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".notifications.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".notifications.NotificationReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <!-- Bo kati restart -->
+        <receiver
+            android:name=".notifications.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".notifications.PushNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- [widget.PrayerWidgetHorizontal] bgora ba nawi Class Widget xot -->
+        <receiver
+            android:name=".widget.SalatWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/salat_widget_info" />
+            <!-- naweki bnw w la jei [prayer_widget_info] dai bne. -->
+        </receiver>
+        <receiver
+            android:name=".widget.SalatWidgetVertical"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/salat_widget_vertical_info" />
+            <!-- naweki bnw w la jei [prayer_widget_info] dai bne. -->
+        </receiver>
+        <receiver
+            android:name=".widget.UpdateWidgetReceiver"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+    <queries>
+        <!-- bokrdnewey appeky tr pewysta pakejekay zyad bkayt. -->
+        <package android:name="com.sslwireless.fastpay" />
+        <package android:name="com.firstiraqibank.personal" />
+    </queries>
+
+</manifest>
