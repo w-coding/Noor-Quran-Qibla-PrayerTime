@@ -123,6 +123,14 @@ Noor Application is a religious application dedicated to the holy religion of Is
  • Interpretation Roshn
  • Interpretation Muiyasar
 
+ 
+## نوێکارییەکانی کۆتا ڤێرژن 5.2.5.4
+- نوێکردنەوەی کاتەکانی بانگ 2025
+- زیادکردنی موسحەف بەشێوازی تێکست
+- زیادکردنی موسحەف مەدینە
+- زیادکردنی زمانی ئاماژە بۆ قورئانی پیرۆز
+- زیادکردنی ئیملائی کوردی بۆ قورئانی پیرۆز
+
 
 
 
@@ -155,3 +163,6 @@ Noor Application is a religious application dedicated to the holy religion of Is
 [YouTube Channel](https://youtube.com/@Noorpageofficial)
 
 [Quran YouTube channel](https://youtube.com/@noor_quran99)
+
+## website
+[Noor](https://noor.krd/)
