@@ -64,11 +64,7 @@
 
 ## لینکی دابەزاندن
 
-[Google play](https://play.google.com/store/apps/details?id=com.dya.noor)
-
-[Apkpure](https://apkpure.com/%D9%86%D9%88%D8%B1-noor/com.dya.noor)
-
-[AppGallery](https://appgallery.huawei.com/app/C109100645)
+[![Download](https://raw.githubusercontent.com/w-coding/Noor-Quran-Qibla-PrayerTime/refs/heads/main/68747470733a2f2f706c61792e676f6f676c652e636f6d2f696e746c2f656e5f75732f6261646765732f7374617469632f696d616765732f6261646765732f656e5f62616467655f7765625f67656e657269632e706e67.png)](https://play.google.com/store/apps/details?id=com.dya.noor)
 
 ## سۆشیاڵ میدیاکنی نوور
 [Facebook Page](https://www.facebook.com/noor.page.officiall?mibextid=ZbWKwL)
