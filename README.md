@@ -59,8 +59,7 @@
 
 
 ## سایتی نوور
-[نوور](https://noor.krd/)
-
+[![noor](https://raw.githubusercontent.com/w-coding/Noor-Quran-Qibla-PrayerTime/refs/heads/main/20250116_190400.png)](https://noor.krd/)
 
 ## لینکی دابەزاندن
 
